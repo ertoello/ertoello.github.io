@@ -134,7 +134,9 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #eece1a;
+  text-align: center;
+}
 
 main {
   padding: 4rem;
@@ -158,13 +160,13 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
+    margin: 10px 10px auto auto;
+    border-radius: 10%;
     border: #eece1a 3px solid;
-    width: 250px;}
+    width: 500px;}
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 20px; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
