@@ -136,8 +136,11 @@ header {
 .text-secondary {
   color: #eece1a;
   text-align: center;
+  margin-top: 2rem;
 }
-
+.about-info .text-secondary{
+  font-size: 2rem;
+}
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -160,10 +163,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    margin: 10px 10px auto auto;
+    margin: 100px 10px auto auto;
     border-radius: 10%;
     border: #eece1a 3px solid;
-    width: 500px;}
+    width: 300px;}
   .about-info .bio {
     grid-area: bio;
     font-size: 20px; }
@@ -239,13 +242,14 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  }
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center;
-   }
+  }
     main .lg-heading {
       margin-top: 2rem;
       font-size: 2rem; 
@@ -272,23 +276,35 @@ main {
       object-position: top center; }
   main .about-info .bio-image{
   width: 200px;
-  margin: 10px auto auto;
+  margin: 0 -10rem 0 10rem ;
   
   
   .about-info {
     grid-template-areas: 'bioimage' 'bio';
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+      
+  }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .about-info p{
+      margin: 0 ;
+      font-size: 10px;
+      text-align: justify;
+    }
+main .about-info h5{
+    padding: 1px;
+    margin: 20rem 0 10px 18rem ;
+    }
+  }
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 1rem; }
+    padding: 0rem; }
     main #home h1 {
       margin-top: 10vh; }
 main .about-info .bio-image{
   width: 200px;
-  margin: 10px auto auto;
+  margin: 10px 0 0 3.5rem ;
 }
 }
 main .lg-heading {
@@ -300,13 +316,16 @@ main .lg-heading {
 main .sm-heading {
       font-size: 10px;
     }
-main .about-info p{
+.about-info p{
+      margin: 0 1rem 0 -17rem ;
       font-size: 10px;
-      text-align: center;
+      text-align: justify;
     }
 main .about-info h5{
     padding: 1px;
-    margin: -15px 0 10px 0;
+    margin: 15rem 0 10px -18rem ;
     }
+.about-info .text-secondary{
+  font-size: 13px;
   .projects {
     grid-template-columns: 1fr; } }
