@@ -17,7 +17,7 @@ export default function Navbar() {
             <nav className='md:ml-auto text-white text-base md:mr-auto flex flex-wrap items-center justify-center'>
                 {
                     listNavbar.map((item, index) =>(
-                        <a key={index} href={item.link} className='mr-5 hover:text-yellow-300'>
+                        <a key={index} href={item.link} className='mr-5 hover:text-yellow-300 text-xl'>
                             {item.name}
                         </a>
                     ))
