@@ -31,11 +31,12 @@ export default function Hero() {
 
       <Navbar />
       <section
+        id="home"
         data-aos="fade-up"
         data-aos-delay="250"
         className="container mx-auto flex px-10 md:px-20 py-24 md:flex-row flex-col items-center h-full"
       >
-        <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center mt-[-60px]">
+        <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center mt-[12px]">
           <img
             src={hi}
             data-aos="fade-up"
@@ -43,7 +44,7 @@ export default function Hero() {
             className="w-16 h-16 animate-bounce md:w-20 md:h-20"
             alt="Hi Icon"
           />
-          <h1 className="text-6xl font-extrabold text-center md:text-left mb-6 drop-shadow-lg leading-tight">
+          <h1 className="text-6xl font-bold text-center md:text-left mb-6 drop-shadow-lg leading-tight">
             Hi! Saya <br />
             <span className="text-[#FF6363]">Yohanes Serpiyanto Elo</span>
           </h1>
@@ -101,7 +102,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 flex justify-center">
-          <div className="relative w-full lg:w-[500px] md:w-[400px] h-full lg:h-[500px] md:h-[400px] rounded-full border-8 border-[#FF6363] shadow-2xl overflow-hidden">
+          <div className="relative w-full lg:w-[450px] md:w-[350px] h-full lg:h-[450px] md:h-[350px] rounded-full border-8 border-[#FF6363] shadow-2xl overflow-hidden">
             <img src={img} alt="Hero" className="w-full h-full object-cover" />
           </div>
         </div>

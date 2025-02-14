@@ -1,56 +1,104 @@
-import React from 'react'
-import img_experience from '../../assets/img_experience.png'
+import React, { useEffect, useRef } from "react";
+import imgExperience from "../../assets/img_experience.png";
+import { motion } from "framer-motion";
 
 export default function Experience() {
-  return (
-    <section
-      id="experience"
-      className="relative overflow-hidden flex flex-col text-gray-600 body-font"
-    >
-      <div className="absolute top-[100px] left-64 inset-x-0 flex items-start justify-center">
-        <div className="h-96 w-96 bg-gradient-to-br from-[#EF8B8B] blur-2xl invisible opacity-40 rounded-full"></div>
-        <div className="h-96 w-96 bg-gradient-to-r from-[#3FA3CE] opacity-40 blur-2xl rounded-full"></div>
-      </div>
+  const experienceContainerRef = useRef(null);
 
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+  useEffect(() => {
+    const scrollInterval = setInterval(() => {
+      if (experienceContainerRef.current) {
+        experienceContainerRef.current.scrollBy({
+          left: 300,
+          behavior: "smooth",
+        });
+      }
+    }, 3000);
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  const experiences = [
+    {
+      title: "IT Full Stack Developer - Rakamin Academy",
+      duration: "Sep 2024 - Jan 2025 (5 Bulan)",
+      location: "Jakarta Selatan, Jakarta Raya, Indonesia (Jarak Jauh)",
+      description: [
+        "Mengembangkan aplikasi web berbasis Laravel dan PHP dengan integrasi API.",
+        "Menguasai desain UI/UX modern menggunakan Figma.",
+        "Melakukan riset pengguna dengan pendekatan User Research & Competitive Analysis.",
+        "Menerapkan praktik keamanan aplikasi dan konsep Cloud Computing.",
+        "Berpartisipasi dalam proyek simulasi akhir dengan presentasi kepada stakeholder.",
+      ],
+    },
+    {
+      title: "Full Stack Developer - PT. Winnicode Garuda Indonesia",
+      duration: "Sep 2024 - Jan 2025 (5 Bulan)",
+      location: "Bandung, Jawa Barat, Indonesia (Jarak Jauh)",
+      description: [
+        "Mengimplementasikan arsitektur MVC (Model-View-Controller) untuk memastikan struktur kode yang terorganisir dan efisien.",
+        "Mengembangkan dan mengintegrasikan backend menggunakan framework modern dengan frontend responsif.",
+        "Merancang antarmuka pengguna yang menarik dengan prinsip estetika dan aksesibilitas.",
+        "Menerapkan praktik keamanan terbaik untuk melindungi informasi pengguna.",
+        "Menguasai manajemen versi proyek menggunakan Git untuk kolaborasi yang efektif.",
+      ],
+    },
+    {
+      title:
+        "Koordinator UKM Kerohanian Kristen - Universitas Bina Sarana Informatika",
+      duration: "Mar 2023 - Feb 2024 (1 Tahun)",
+      location: "Bekasi, Jawa Barat, Indonesia",
+      description: [
+        "Mengorganisir ibadah mingguan dan event besar seperti Perayaan Natal.",
+        "Memfasilitasi kegiatan bakti sosial untuk masyarakat.",
+        "Berperan sebagai pembicara dengan topik yang menekankan nilai kasih dan kedamaian.",
+        "Meningkatkan keterampilan komunikasi dan pemecahan masalah sebagai pemimpin.",
+      ],
+    },
+  ];
+
+  return (
+    <section id="experience" className="relative py-20 text-white">
+      <div className="container mx-auto px-5">
+        <h2 className="text-5xl font-extrabold text-center mb-12 tracking-widest text-[#3FA3CE]">
+          Pengalaman Profesional
+        </h2>
+
         <div
-          data-aos="fade-right"
-          data-aos-delay="400"
-          className="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0"
+          ref={experienceContainerRef}
+          className="flex space-x-10 overflow-x-auto pb-10"
         >
-          <div className="md:h-[450px] h-[400px] md:w-[300px] w-[300px] md:right-36 bg-gradient-to-r from-[#3FA3CE] via-[#EF8B8B] to-[#E6E6FA] absolute rounded-md transform rotate-3 -top-8 shadow-[0_0_40px_rgba(63,163,206,0.7)] z-0"></div>
-          <img
-            src={img_experience}
-            className="object-cover md:w-[300px] md:h-[450px] object-center rounded relative z-10"
-            alt="Experience"
-          />
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="400"
-          className="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center "
-        >
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#FFFFFF]">
-            Experience
-          </h1>
-          <h2 className="title-font font-bold text-white sm:text-2xl ">
-            2023 :
-          </h2>
-          <p className="mb-8 text-white leading-relaxed ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis voluptate soluta, inventore veritatis quo odio repellat
-            ad atque veniam aspernatur consectetur ipsum quis repellendus
-            necessitatibus, ipsam nulla dolor id laudantium!
-          </p>
-          <h2 className="title-font font-bold text-white sm:text-2xl ">
-            2024 :
-          </h2>
-          <p className="mb-8 text-white leading-relaxed ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis voluptate soluta, inventore veritatis quo odio repellat
-            ad atque veniam aspernatur consectetur ipsum quis repellendus
-            necessitatibus, ipsam nulla dolor id laudantium!
-          </p>
+          {experiences.map((experience, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.3 }}
+              className="min-w-[350px] flex-shrink-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out hover:scale-105"
+            >
+              <div className="bg-gradient-to-r from-[#3FA3CE] via-[#EF8B8B] to-[#FFFFFF] p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105">
+                <h3 className="flex items-center justify-center space-x-3 text-2xl font-semibold text-[#FFFFFF] mb-4 p-4 rounded-lg bg-[#3FA3CE] shadow-lg">
+                  {/* Ganti icon ini dengan icon yang kamu suka */}
+                  <i className="fas fa-briefcase text-white text-3xl"></i>
+                  <span>{experience.title}</span>
+                </h3>
+
+                <p className="text-md text-[#D7D7D7] mb-2">
+                  <strong>{experience.duration}</strong>
+                </p>
+                <p className="text-md text-[#D7D7D7] mb-4">
+                  <em>{experience.location}</em>
+                </p>
+                <ul className="list-disc list-inside text-[#000000] space-y-2">
+                  {experience.description.map((item, idx) => (
+                    <li key={idx} className="text-lg font-normal">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

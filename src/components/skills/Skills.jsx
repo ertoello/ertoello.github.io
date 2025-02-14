@@ -33,7 +33,7 @@ export default function Skills() {
         data-aos="fade-right"
         className="md:w-1/2 text-left md:pr-12 border-b md:border-b-0 md:border-r border-[#3FA3CE] pb-10 md:pb-0"
       >
-        <h1 className="text-5xl font-bold text-[#3FA3CE] mb-6 drop-shadow-lg">
+        <h1 className="text-5xl font-extrabold text-left mb-12 tracking-widest text-[#3FA3CE]">
           💼 Keahlian Utama
         </h1>
         <p className="text-lg text-gray-300 mb-8">
