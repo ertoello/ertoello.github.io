@@ -3,6 +3,7 @@ import Navbar from "../navbar/Navbar";
 import hi from "../../assets/hi.png";
 import CV from "./CV.pdf";
 import img from "../../assets/profil2.png";
+import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -31,7 +32,7 @@ export default function Hero() {
 
       <Navbar />
       <section
-        id="home"
+        id="beranda"
         data-aos="fade-up"
         data-aos-delay="250"
         className="container mx-auto flex px-10 md:px-20 py-24 md:flex-row flex-col items-center h-full"
@@ -41,31 +42,30 @@ export default function Hero() {
             src={hi}
             data-aos="fade-up"
             data-aos-delay="400"
-            className="w-16 h-16 animate-bounce md:w-20 md:h-20"
+            className="w-16 h-16 animate-bounce md:w-15 md:h-15"
             alt="Hi Icon"
           />
-          <h1 className="text-6xl font-bold text-center md:text-left mb-6 drop-shadow-lg leading-tight">
+          <h1 className="text-5xl font-bold text-center md:text-left mb-4 drop-shadow-lg leading-tight">
             Hi! Saya <br />
             <span className="text-[#FF6363]">Yohanes Serpiyanto Elo</span>
           </h1>
-
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12 md:space-x-12">
             <div className="text-center md:text-left mb-6 md:mb-0">
               <div className="flex items-center justify-center md:justify-start -mt-3 animate__animated animate__fadeIn animate__delay-1s">
-                <h2 className="text-lg md:text-xl font-normal text-[#FF6363]">
+                <h2 className="text-sm md:text-center font-normal text-[#FF6363]">
                   💻 Full Stack Developer
                 </h2>
-                <span className="mx-4 text-xl text-gray-500">||</span>
-                <h2 className="text-lg md:text-xl font-normal text-[#3FA3CE]">
+                <span className="mx-2 text-center text-gray-500">||</span>
+                <h2 className="text-sm md:text-center font-normal text-[#3FA3CE]">
                   🌐 Innovative Digital Solutions
                 </h2>
-                <span className="mx-4 text-xl text-gray-500">||</span>
-                <h2 className="text-lg md:text-xl font-normal text-[#FFAA33]">
+                <span className="mx-2 text-center text-gray-500">||</span>
+                <h2 className="text-sm md:text-center font-normal text-[#FFAA33]">
                   🚀 Expert in Modern Technology
                 </h2>
               </div>
 
-              <div className="text-lg text-gray-300 mt-4">
+              <div className="text-md text-gray-300 mt-4">
                 <p>
                   Sebagai seorang Full Stack Developer yang berpengalaman dalam
                   menggunakan teknologi modern seperti React.js, CodeIgniter
@@ -87,16 +87,11 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
           <div className="flex justify-center md:justify-start space-x-6">
             <a href={CV} download>
-              <button className="text-white bg-[#FF6363] py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#D45D5D] hover:shadow-2xl transform hover:scale-105">
-                Download CV
-              </button>
-            </a>
-            <a href="#contact">
-              <button className="text-white bg-[#3FA3CE] py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#318EB3] hover:shadow-2xl transform hover:scale-105">
-                Contact Me
+              <button className="flex items-center text-white bg-[#FF6363] py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#D45D5D] hover:shadow-2xl transform hover:scale-105">
+                <FaDownload className="mr-2" />
+                Download CV (Curriculum Vitae)
               </button>
             </a>
           </div>

@@ -53,7 +53,7 @@ export default function Projects() {
     <section
       data-aos="fade-up"
       data-aos-delay="400"
-      id="projects"
+      id="proyek"
       className="relative overflow-hidden flex flex-col text-[#FFFFFF] body-font"
     >
       <div className="container px-5 py-24 mx-auto">
