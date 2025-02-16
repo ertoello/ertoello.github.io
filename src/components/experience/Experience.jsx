@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import imgExperience from "../../assets/img_experience.png";
 import { motion } from "framer-motion";
+import { FaBriefcase } from "react-icons/fa";
 
 export default function Experience() {
   const experienceContainerRef = useRef(null);
@@ -9,11 +10,11 @@ export default function Experience() {
     const scrollInterval = setInterval(() => {
       if (experienceContainerRef.current) {
         experienceContainerRef.current.scrollBy({
-          left: 300,
+          left: 0,
           behavior: "smooth",
         });
       }
-    }, 3000);
+    }, 0);
 
     return () => clearInterval(scrollInterval);
   }, []);
@@ -58,15 +59,22 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="relative py-20 text-white">
+    <section
+      id="pengalaman"
+      className="relative py-20 px-5 md:px-20 text-white"
+    >
       <div className="container mx-auto px-5">
-        <h2 className="text-5xl font-extrabold text-center mb-12 tracking-widest text-[#3FA3CE]">
-          Pengalaman Profesional
+        <h2
+          className="text-5xl font-extrabold text-center mb-12 tracking-widest text-[#3FA3CE] flex items-center justify-center space-x-4"
+          data-aos="fade-down"
+        >
+          <FaBriefcase className="text-[#3FA3CE] text-6xl" />
+          <span>Pengalaman Profesional</span>
         </h2>
 
         <div
           ref={experienceContainerRef}
-          className="flex space-x-10 overflow-x-auto pb-10"
+          className="flex space-x-10 overflow-x-auto pb-10 -mx-4"
         >
           {experiences.map((experience, index) => (
             <motion.div
@@ -74,24 +82,21 @@ export default function Experience() {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
-              className="min-w-[350px] flex-shrink-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out hover:scale-105"
+              className="w-full md:w-3/4 lg:w-1/2 px-4 flex-shrink-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out hover:scale-105"
             >
-              <div className="bg-gradient-to-r from-[#3FA3CE] via-[#EF8B8B] to-[#FFFFFF] p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105">
-                <h3 className="flex items-center justify-center space-x-3 text-2xl font-semibold text-[#FFFFFF] mb-4 p-4 rounded-lg bg-[#3FA3CE] shadow-lg">
-                  {/* Ganti icon ini dengan icon yang kamu suka */}
-                  <i className="fas fa-briefcase text-white text-3xl"></i>
+              <div className="bg-[#FFFFFF] p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105">
+                <h3 className="flex items-center justify-center space-x-3 text-xl font-semibold text-[#FFFFFF] mb-4 p-4 rounded-lg bg-[#3FA3CE] shadow-lg">
                   <span>{experience.title}</span>
                 </h3>
-
-                <p className="text-md text-[#D7D7D7] mb-2">
+                <p className="text-sm text-[#ababab] mb-2">
                   <strong>{experience.duration}</strong>
                 </p>
-                <p className="text-md text-[#D7D7D7] mb-4">
+                <p className="text-sm text-[#ababab] mb-4">
                   <em>{experience.location}</em>
                 </p>
                 <ul className="list-disc list-inside text-[#000000] space-y-2">
                   {experience.description.map((item, idx) => (
-                    <li key={idx} className="text-lg font-normal">
+                    <li key={idx} className="text-md font-normal">
                       {item}
                     </li>
                   ))}

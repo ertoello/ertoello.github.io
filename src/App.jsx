@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "./components/hero/Hero";
+import Pendidikan from "./components/pendidikan/Pendidikan";
 import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
@@ -18,11 +19,12 @@ export default function App() {
   return (
     <main className="bg-[#0d182e]">
       <Hero />
+      <Pendidikan />
       <Skills />
       <Experience />
       <Sertifikat />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   );
