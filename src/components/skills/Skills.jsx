@@ -1,5 +1,11 @@
 import React from "react";
-import { FaCode, FaDatabase, FaServer, FaTools } from "react-icons/fa";
+import {
+  FaCode,
+  FaDatabase,
+  FaServer,
+  FaTools,
+  FaGithub,
+} from "react-icons/fa";
 import javascript from "../../assets/javascript.png";
 import html from "../../assets/html.png";
 import php from "../../assets/php.png";
@@ -76,7 +82,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-start space-x-4">
-            <FaCode className="text-[#3FA3CE] text-3xl" />
+            <FaGithub className="text-[#3FA3CE] text-3xl" />
             <div>
               <h2 className="text-2xl font-semibold">
                 Version Control & Collaboration

@@ -47,7 +47,7 @@ export default function Hero() {
           />
           <h1 className="text-5xl font-bold text-center md:text-left mb-4 drop-shadow-lg leading-tight">
             Hi! Saya <br />
-            <span className="text-[#FF6363]">Yohanes Serpiyanto Elo</span>
+            <span className="text-[#3FA3CE]">Yohanes Serpiyanto Elo</span>
           </h1>
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12 md:space-x-12">
             <div className="text-center md:text-left mb-6 md:mb-0">
@@ -89,7 +89,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center md:justify-start space-x-6">
             <a href={CV} download>
-              <button className="flex items-center text-white bg-[#FF6363] py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#D45D5D] hover:shadow-2xl transform hover:scale-105">
+              <button className="flex items-center text-white bg-[#3FA3CE] py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#3FA3CE] hover:shadow-2xl transform hover:scale-105">
                 <FaDownload className="mr-2" />
                 Download CV (Curriculum Vitae)
               </button>

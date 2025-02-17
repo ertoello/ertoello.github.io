@@ -310,7 +310,7 @@ export default function Sertifikat() {
           onClick={closeModal} // Close modal saat klik di luar
         >
           <div
-            className="relative bg-[#FFFFFF] p-6 rounded-2xl w-[40rem]"
+            className="relative bg-[#FFFFFF] p-6 rounded-2xl w-[40rem] max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()} // Stop klik dalam modal agar tidak menutup
           >
             {/* Tombol Close di kanan atas dengan ikon dan tulisan */}
@@ -329,6 +329,7 @@ export default function Sertifikat() {
               alt={selectedCert.title}
               className="w-full h-auto rounded-xl mb-4"
             />
+            {/* Konten tambahan jika ada */}
           </div>
         </div>
       )}

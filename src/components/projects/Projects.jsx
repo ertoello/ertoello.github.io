@@ -6,6 +6,7 @@ import image from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
+import { FaLaptopCode } from "react-icons/fa";
 
 export default function Projects() {
   const listProjects = [
@@ -57,7 +58,14 @@ export default function Projects() {
       className="relative overflow-hidden flex flex-col text-[#FFFFFF] body-font"
     >
       <div className="container px-5 py-24 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h2
+          className="text-5xl font-extrabold text-center mb-8 tracking-widest text-[#3FA3CE] flex items-center justify-center space-x-4"
+          data-aos="fade-down"
+        >
+          <FaLaptopCode className="text-[#3FA3CE] text-6xl" />{" "}
+          {/* Ganti ikon di sini */}
+          <span>Projek-Projek Saya</span>
+        </h2>
         <Slider {...settings}>
           {listProjects.map((project) => {
             return (

@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import bgfooter from "../../assets/bgfooter.jpg";
 
 export default function Footer() {
   const listNavbar = [
@@ -41,7 +42,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#3FA3CE] text-[#FFFFFF] py-14">
+    <footer
+      className="bg-cover bg-center text-[#FFFFFF] py-14"
+      style={{
+        backgroundImage: `url(${bgfooter})`,
+      }}
+    >
       <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Tentang */}
         <div>

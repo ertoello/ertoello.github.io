@@ -6,7 +6,7 @@ import {
   FaCode,
   FaBriefcase,
   FaCertificate,
-  FaProjectDiagram,
+  FaLaptopCode,
 } from "react-icons/fa";
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: "Keahlian", link: "#keahlian", icon: <FaCode /> },
     { name: "Pengalaman", link: "#pengalaman", icon: <FaBriefcase /> },
     { name: "Sertifikasi", link: "#sertifikat", icon: <FaCertificate /> },
-    { name: "Projek", link: "#proyek", icon: <FaProjectDiagram /> },
+    { name: "Projek", link: "#proyek", icon: <FaLaptopCode /> },
   ];
 
   return (
