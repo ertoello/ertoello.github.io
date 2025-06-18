@@ -2,60 +2,54 @@
   "hash": "65e85d63",
   "configHash": "8d18c83b",
   "lockfileHash": "91d136b0",
-  "browserHash": "c494173a",
+  "browserHash": "e1de4fd9",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "0ce64dd0",
+      "fileHash": "6b4eed4d",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "987f4495",
+      "fileHash": "a64adaad",
       "needsInterop": true
     },
     "aos": {
       "src": "../../node_modules/aos/dist/aos.js",
       "file": "aos.js",
-      "fileHash": "342174aa",
+      "fileHash": "bed5a95a",
       "needsInterop": true
     },
     "react-icons/fa": {
       "src": "../../node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
-      "fileHash": "5afe43b3",
-      "needsInterop": false
-    },
-    "framer-motion": {
-      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
-      "file": "framer-motion.js",
-      "fileHash": "9afb729e",
+      "fileHash": "e25f9bf7",
       "needsInterop": false
     },
     "react-icons/ai": {
       "src": "../../node_modules/react-icons/ai/index.mjs",
       "file": "react-icons_ai.js",
-      "fileHash": "6cca2d3d",
+      "fileHash": "c5febc76",
       "needsInterop": false
     },
-    "react-slick": {
-      "src": "../../node_modules/react-slick/lib/index.js",
-      "file": "react-slick.js",
-      "fileHash": "d0e86469",
-      "needsInterop": true
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "5a8eea23",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-2CVX3UOB": {
-      "file": "chunk-2CVX3UOB.js"
+    "chunk-QVXJH6VV": {
+      "file": "chunk-QVXJH6VV.js"
     },
-    "chunk-65KY755N": {
-      "file": "chunk-65KY755N.js"
+    "chunk-32E4H3EV": {
+      "file": "chunk-32E4H3EV.js"
     },
-    "chunk-V4OQ3NZ2": {
-      "file": "chunk-V4OQ3NZ2.js"
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
     }
   }
 }
