@@ -16,6 +16,9 @@ import mysql from "../../assets/mysql.png";
 import bootstrap from "../../assets/bootstrap.jpg";
 import codeigniter from "../../assets/codeigniter.png";
 import github from "../../assets/github.png";
+import figma from "../../assets/figma.png";
+import mongodb from "../../assets/mongodb.png";
+import python from "../../assets/python.png";
 
 export default function Skills() {
   const skills = [
@@ -29,6 +32,9 @@ export default function Skills() {
     { img: mysql, name: "MySQL" },
     { img: codeigniter, name: "CodeIgniter" },
     { img: github, name: "Github" },
+    { img: figma, name: "Figma" },
+    { img: mongodb, name: "MongoDB" },
+    { img: python, name: "Python" },
   ];
 
   return (
@@ -53,6 +59,7 @@ export default function Skills() {
               <ul className="list-disc list-inside text-gray-300 text-lg">
                 <li>HTML, CSS, JavaScript, React, Bootstrap</li>
                 <li>Desain responsif & estetis</li>
+                <li>UI/UX Design menggunakan Figma</li>
                 <li>Pengembangan aplikasi web interaktif dan dinamis</li>
               </ul>
             </div>
@@ -63,7 +70,8 @@ export default function Skills() {
             <div>
               <h2 className="text-2xl font-semibold">Back-End Development</h2>
               <ul className="list-disc list-inside text-gray-300 text-md">
-                <li>PHP, Laravel, CodeIgniter</li>
+                <li>PHP, Laravel, CodeIgniter, Python</li>
+                <li>Node.js (Express), RESTful API</li>
                 <li>Logika sistem yang andal dan skalabel</li>
                 <li>Pengembangan API dan integrasi dengan berbagai layanan</li>
               </ul>
@@ -75,12 +83,13 @@ export default function Skills() {
             <div>
               <h2 className="text-2xl font-semibold">Database Management</h2>
               <ul className="list-disc list-inside text-gray-300 text-md">
-                <li>MySQL, PostgreSQL</li>
+                <li>MySQL, PostgreSQL, MongoDB</li>
                 <li>Pengelolaan data yang efisien dan terstruktur</li>
                 <li>Pengoptimalan query untuk performa yang lebih baik</li>
               </ul>
             </div>
           </div>
+
           <div className="flex items-start space-x-4">
             <FaGithub className="text-[#3FA3CE] text-3xl" />
             <div>
@@ -93,6 +102,10 @@ export default function Skills() {
                 <li>
                   Pengelolaan proyek open-source dengan pull request & issue
                   tracking
+                </li>
+                <li>Kolaborasi menggunakan metode Agile (Scrum, Kanban)</li>
+                <li>
+                  Penggunaan tools manajemen proyek seperti Trello dan Notion
                 </li>
               </ul>
             </div>

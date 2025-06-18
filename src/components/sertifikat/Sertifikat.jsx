@@ -36,6 +36,9 @@ import analisisprogram from "../../assets/sertifikat/analisisprogram.jpg";
 import htmldasarskilvul from "../../assets/sertifikat/htmldasarskilvul.png";
 import cssdasarskilvul from "../../assets/sertifikat/cssdasarskilvul.png";
 import pythondasarskilvul from "../../assets/sertifikat/pythondasarskilvul.png";
+import udemylogo from "../../assets/sertifikat/udemy.png";
+import  udemysertifikat from "../../assets/sertifikat/udemysertifikat.png";
+import skillvulreact from "../../assets/sertifikat/reactdasar.png";
 
 export default function Sertifikat() {
 
@@ -50,6 +53,28 @@ export default function Sertifikat() {
   const [selectedCert, setSelectedCert] = useState(null);
 
   const certifications = [
+    {
+      title: "React Dasar",
+      issuedBy: "Skilvul",
+      issuedDate: "Juni 2025",
+      expirationDate: "Juni 2027",
+      credentialID: "cl6qlj4un00nb01nt513n5jk8",
+      skills: "React.js, Front-End Development, Web Development, JavaScript",
+      logo: skilvul, // logo Skilvul
+      lisensi: skillvulreact,
+    },
+    {
+      title: "(Legacy) React JS Bahasa Indonesia [Bonus React Bootstrap]",
+      issuedBy: "Udemy",
+      issuedDate: "Maret 2025",
+      expirationDate: "Maret 2027",
+      credentialID: "UC-3b25112d-1d00-47c1-8920-e5eb6b3b188b",
+      skills:
+        "React.js, Bootstrap (Framework), JavaScript, Pengembangan Web, Front-end Development",
+      logo: udemylogo, // ganti dengan logo Udemy
+      lisensi: udemysertifikat,
+    },
+
     {
       title:
         "Certificate of Completion (Sertifikat Kelulusan) Lulus Kursus JavaScript Intermediate",
