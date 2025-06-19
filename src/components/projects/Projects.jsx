@@ -10,6 +10,7 @@ import image5 from "../../assets/image5.png";
 import image6 from "../../assets/image6.png";
 import image7 from "../../assets/image7.png";
 import image8 from "../../assets/image8.png";
+import image9 from "../../assets/image9.png";
 
 export default function Projects() {
   const listProjects = [
@@ -77,6 +78,14 @@ export default function Projects() {
       description:
         "Website informasi sekolah untuk digitalisasi profil sekolah, pendaftaran siswa, dan sistem komunikasi sekolah. Teknologi: HTML | CSS | JavaScript | Front-End",
       github: "https://github.com/ertoello/web-sekolah",
+    },
+    {
+      id: 9,
+      image: image9,
+      title: "🌐 Website Portofolio Pribadi",
+      description:
+        "Website portofolio ini dibangun untuk menampilkan hasil karya, pengalaman, serta keahlian saya di bidang web development, UI/UX, dan pengembangan aplikasi. Teknologi: React JS | Tailwind CSS | HTML/CSS | JavaScript",
+      github: "https://github.com/ertoello/ertoello.github.io.git",
     },
   ];
 

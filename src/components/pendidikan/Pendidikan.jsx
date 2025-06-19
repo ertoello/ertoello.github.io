@@ -22,7 +22,7 @@ export default function Pendidikan() {
         'Diskusi dan kolaborasi dengan tim dalam pengembangan perangkat lunak',
       ],
       deskripsi:
-        'Sebagai mahasiswa Teknologi Informasi dengan IPK 3.88, saya memiliki keahlian dalam pengembangan aplikasi web modern. Berpengalaman dengan React.js, CodeIgniter (CI), dan Laravel untuk membangun aplikasi berbasis web yang responsif dan scalable.',
+        'Sebagai mahasiswa Teknologi Informasi dengan IPK 3.89, saya memiliki keahlian dalam pengembangan aplikasi web modern. Berpengalaman dengan React.js, CodeIgniter (CI), dan Laravel untuk membangun aplikasi berbasis web yang responsif dan scalable.',
       keahlian:
         'Desain Web, Pengembangan Web, Kreativitas, Pemecahan Masalah, Leadership & Team Coordination',
     },

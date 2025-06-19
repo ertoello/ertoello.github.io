@@ -18,7 +18,7 @@ import codeigniter from "../../assets/codeigniter.png";
 import github from "../../assets/github.png";
 import figma from "../../assets/figma.png";
 import mongodb from "../../assets/mongodb.png";
-import python from "../../assets/python.png";
+// import python from "../../assets/python.png";
 
 export default function Skills() {
   const skills = [
@@ -34,7 +34,7 @@ export default function Skills() {
     { img: github, name: "Github" },
     { img: figma, name: "Figma" },
     { img: mongodb, name: "MongoDB" },
-    { img: python, name: "Python" },
+    // { img: python, name: "Python" },
   ];
 
   return (
@@ -71,7 +71,7 @@ export default function Skills() {
               <h2 className="text-2xl font-semibold">Back-End Development</h2>
               <ul className="list-disc list-inside text-gray-300 text-md">
                 <li>PHP, Laravel, CodeIgniter, Python</li>
-                <li>Node.js (Express), RESTful API</li>
+                <li>MERN Stack, RESTful API</li>
                 <li>Logika sistem yang andal dan skalabel</li>
                 <li>Pengembangan API dan integrasi dengan berbagai layanan</li>
               </ul>
@@ -83,7 +83,7 @@ export default function Skills() {
             <div>
               <h2 className="text-2xl font-semibold">Database Management</h2>
               <ul className="list-disc list-inside text-gray-300 text-md">
-                <li>MySQL, PostgreSQL, MongoDB</li>
+                <li>MySQL & MongoDB</li>
                 <li>Pengelolaan data yang efisien dan terstruktur</li>
                 <li>Pengoptimalan query untuk performa yang lebih baik</li>
               </ul>
@@ -103,9 +103,9 @@ export default function Skills() {
                   Pengelolaan proyek open-source dengan pull request & issue
                   tracking
                 </li>
-                <li>Kolaborasi menggunakan metode Agile (Scrum, Kanban)</li>
+                <li>Kolaborasi menggunakan metode Agile</li>
                 <li>
-                  Penggunaan tools manajemen proyek seperti Trello dan Notion
+                  Penggunaan tools manajemen proyek seperti Trello
                 </li>
               </ul>
             </div>
